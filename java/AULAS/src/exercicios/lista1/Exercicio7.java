@@ -27,5 +27,6 @@ public class Exercicio7 {
 		y = ((a * f) - (c * d))/((a * e) - (b * d));
 		
 		System.out.println("X: " + x + " Y: " + y);
+		scan.close();
 	}
 }

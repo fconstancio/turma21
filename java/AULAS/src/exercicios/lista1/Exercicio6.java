@@ -22,7 +22,8 @@ public class Exercicio6 {
 		
 		d = Math.sqrt(p1 + p2);
 		
-		System.out.println("A distância entre os dois pontos é: " + d);
+		System.out.printf("A distância entre os dois pontos é: %.2f", d);
+		scan.close();
 		
 	}
 }

@@ -16,6 +16,7 @@ public class Exercicio1 {
 		dia = dia + (ano * 365) + (mes * 30);
 		
 		System.out.println("Sua idade em dias: " + dia);
+		scan.close();
 	}
 
 }

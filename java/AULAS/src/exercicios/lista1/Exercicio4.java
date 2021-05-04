@@ -19,12 +19,7 @@ public class Exercicio4 {
 		d = (r + s) / 2;
 		
 		System.out.println("Resultado: " + d);
-			
-		
-		
-		
-		
-		
+		scan.close();
 	}
 
 }

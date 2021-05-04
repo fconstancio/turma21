@@ -13,5 +13,6 @@ public class Exercicio3 {
 		seg = (seg%3600)%60;
 		
 		System.out.printf("Tempo de duração: %s hroas, %s minutos e %s segundos", hr, min, seg);
+		scan.close();
 	}
 }

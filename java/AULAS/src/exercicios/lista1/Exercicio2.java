@@ -12,5 +12,6 @@ public class Exercicio2 {
 		dia = ((dia%365)%30);
 		
 		System.out.printf("Você tem: %s anos %s meses %s dias.",ano, mes, dia);
+		scan.close();
 	}
 }

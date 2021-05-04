@@ -16,6 +16,7 @@ public class Exercicio5 {
 		med = ((a * 2) + (b * 3) + (c * 5)) / 10;
 		
 		System.out.println("Sua média foi: " + med);
+		scan.close();
 		
 	}
 

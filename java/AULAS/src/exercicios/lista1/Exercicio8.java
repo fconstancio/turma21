@@ -15,5 +15,6 @@ public class Exercicio8 {
 		System.out.println("Percetagem do distribuidor: " + (custoFabrica * distribuidor));
 		System.out.println("Imposto: " + (custoFabrica * imposto));
 		System.out.println("Custo ao consumidor: " + valorFinal);
+		scan.close();
 	}
 }
