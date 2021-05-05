@@ -16,7 +16,8 @@ public class Exercicio2 {
 		
 		if (a > b) {
 			if (b > c) {
-				System.out.printf("%.2f > %.2f > %.2f", a , b , c);							}else {
+				System.out.printf("%.2f > %.2f > %.2f", a , b , c);							
+			}else {
 				if (a > c) {
 					System.out.printf("%.2f > %.2f > %.2f", a , c , b);			
 				}else {
