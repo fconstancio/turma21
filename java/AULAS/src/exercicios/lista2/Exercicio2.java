@@ -16,22 +16,23 @@ public class Exercicio2 {
 		
 		if (a > b) {
 			if (b > c) {
-				System.out.printf("%.2f > %.2f > %.2f", a , b , c);							
+				System.out.printf("%.2f -> %.2f -> %.2f", c , b , a);							
 			}else {
 				if (a > c) {
-					System.out.printf("%.2f > %.2f > %.2f", a , c , b);			
+					System.out.printf("%.2f -> %.2f -> %.2f", b , c , a);			
 				}else {
-					System.out.printf("%.2f > %.2f > %.2f", c , a , b);							}
+					System.out.printf("%.2f -> %.2f -> %.2f", b , a , c);							
 				}
+			}
 		}else {
 			if (b > c) {
 				if (a > c) {
-					System.out.printf("%.2f > %.2f > %.2f", b , a , c);							
+					System.out.printf("%.2f -> %.2f -> %.2f", c, a, b);							
 				}else {
-					System.out.printf("%.2f > %.2f > %.2f", b , c , a);							
+					System.out.printf("%.2f -> %.2f -> %.2f", a , c , b);							
 				}
 			}else {
-				System.out.printf("%.2f > %.2f > %.2f", c , b , a);							
+				System.out.printf("%.2f -> %.2f -> %.2f", a , b , c);							
 			}
 		}
 		
