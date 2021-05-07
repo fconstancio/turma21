@@ -16,13 +16,20 @@ public class DesafioAluno {
 		boolean continua = true;
 		
 		System.out.printf("GRUPO G8");
-		System.out.printf("PARTICIPANTES: Matheus, Fernando, Malu, Nathalia, Barbara");
+		System.out.printf("\nPARTICIPANTES: Matheus, Fernando, Malu, Nathalia, Barbara");
 		System.out.println();
+
 		
 		//MATRICULAS
 		for(int i = 0; i < matricula.length; i++) {
 			matricula[i] = "G8-"+(i+1);
 		}
+		
+		System.out.println("MAT \t NOME");
+		for(int i= 0; i < matricula.length; i++) {
+			System.out.printf("%s \t %s\n",matricula[i],alunos[i]);
+		}
+		System.err.println();
 		
 		do {
 			System.out.printf("Digite a matricula do aluno: ");
@@ -31,7 +38,7 @@ public class DesafioAluno {
 			System.out.printf("\nDigite a nota do aluno: ");
 			notas[numero] = leia.nextInt();
 			
-			System.out.printf("Quer sair S/N: ");
+			System.out.printf("Quer continuar S/N: ");
 			resposta = leia.next().toUpperCase().charAt(0);
 			if(resposta == 'S') {
 				continua = true;
