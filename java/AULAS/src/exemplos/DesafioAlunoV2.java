@@ -18,9 +18,9 @@ public class DesafioAlunoV2 {
 				"Mateus Rosendo Firmino de Oliveira", "Matheus de Souza Barbosa", "Nathalia Beatriz Silva Pereira",
 				"Pedro Henrique de Azevedo Magalhães", "Renato Novais da Silva", "Renato Yukio Ossiama Nakamura",
 				"Robson de Jesus Vasconcelos", "Tainah Vinha", "Vinicius Martins Santos" };
-		String mat;
+		String mat = "";
 		int notas[] = new int[35];
-		int numero = 0;
+		int indice = 0;
 		char resposta;
 		boolean continua = true;
 
@@ -37,19 +37,18 @@ public class DesafioAlunoV2 {
 		for (int i = 0; i < matricula.length; i++) {
 			System.out.printf("%s \t %s\n", matricula[i], alunos[i]);
 		}
-		System.out.println();
+		// System.out.println();
 
-		do{
+		do {
 			System.out.print("\nDigite a matricula do aluno: ");
-			mat = leia.nextLine().toUpperCase();
-			
+			mat = leia.next().toUpperCase();
+
 			for (int i = 0; i < matricula.length; i++) {
 				if (mat.equals(matricula[i])) {
-					numero = i;
-					System.out.printf("%s - %s", matricula[numero], alunos[numero]);
+					indice = i;
+					System.out.printf("%s - %s", matricula[indice], alunos[indice]);
 					System.out.printf("\nDigite a nota do aluno: ");
-					notas[numero] = leia.nextInt();
-
+					notas[indice] = leia.nextInt();
 					System.out.printf("Quer continuar S/N: ");
 					resposta = leia.next().toUpperCase().charAt(0);
 					if (resposta == 'S') {
@@ -57,12 +56,11 @@ public class DesafioAlunoV2 {
 					} else {
 						continua = false;
 					}
-					System.out.printf("==");
 					break;
 				}
 			}
-			
-		}while(continua);
+
+		} while (continua);
 
 		System.out.printf("\nLISTA DE ALUNOS QUE POSSUEM NOTA:");
 		System.out.printf("\nMAT\tNOME\tNOTA");
