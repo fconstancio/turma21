@@ -50,12 +50,12 @@ public class Exercicio4 {
 			continua = ((sc.next().toUpperCase().charAt(0) == 'S')? true: false);
 			count++;
 		}
-		System.out.printf("\nO número de pessoas calmas: %d", countC);
-		System.out.printf("\nO número de mulheres nervosas: %d", countFn);
-		System.out.printf("\nO número de homens agressivos: %d", countMa);
+		System.out.printf("\nO número de pessoas calmas: %d.", countC);
+		System.out.printf("\nO número de mulheres nervosas: %d.", countFn);
+		System.out.printf("\nO número de homens agressivos: %d.", countMa);
 		System.out.printf("\nO número de outros calmos: %d", countOc);
-		System.out.printf("\nO número de pessoas nervosas com mais de 40 anos: %d", countNq);
-		System.out.printf("\nO número de pessoas calmas com menos de 18 anos: %d", countCd);
+		System.out.printf("\nO número de pessoas nervosas com mais de 40 anos: %d.", countNq);
+		System.out.printf("\nO número de pessoas calmas com menos de 18 anos: %d.", countCd);
 		sc.close();
 	}
 }
