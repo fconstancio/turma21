@@ -31,7 +31,7 @@ public class DesafioAluno {
 			System.out.printf("\nDigite a nota do aluno: ");
 			notas[numero] = leia.nextInt();
 			
-			System.out.printf("\nQuer sair S/N: ");
+			System.out.printf("Quer sair S/N: ");
 			resposta = leia.next().toUpperCase().charAt(0);
 			if(resposta == 'S') {
 				continua = true;
@@ -40,8 +40,9 @@ public class DesafioAluno {
 			}
 		}while(continua);
 		
+		System.out.printf("\nLISTA DE ALUNOS QUE POSSUEM NOTA:");
+		System.out.printf("\nMATRICULA - NOME - NOTA");
 		for (int i= 0; i < matricula.length; i++) {
-			System.out.printf("LISTA DE ALUNOS QUE POSSUEM NOTA:");
 			if(notas[i] != 0 ) {
 				System.out.printf("\n%s %s %d", matricula[i], alunos[i], notas[i]);
 			}
