@@ -2,7 +2,7 @@ package exemplos;
 
 import java.util.Scanner;
 
-public class DesafioAluno {
+public class DesafioAlunoV2 {
 	public static void main(String[] args) {
 		Scanner leia = new Scanner(System.in);
 
@@ -18,8 +18,9 @@ public class DesafioAluno {
 				"Mateus Rosendo Firmino de Oliveira", "Matheus de Souza Barbosa", "Nathalia Beatriz Silva Pereira",
 				"Pedro Henrique de Azevedo Magalhães", "Renato Novais da Silva", "Renato Yukio Ossiama Nakamura",
 				"Robson de Jesus Vasconcelos", "Tainah Vinha", "Vinicius Martins Santos" };
+		String mat;
 		int notas[] = new int[35];
-		int numero;
+		int numero = 0;
 		char resposta;
 		boolean continua = true;
 
@@ -38,21 +39,30 @@ public class DesafioAluno {
 		}
 		System.out.println();
 
-		do {
-			System.out.printf("Digite a matricula do aluno: ");
-			numero = (leia.nextInt() - 1);
-			System.out.printf("%s - %s", matricula[numero], alunos[numero]);
-			System.out.printf("\nDigite a nota do aluno: ");
-			notas[numero] = leia.nextInt();
+		do{
+			System.out.print("\nDigite a matricula do aluno: ");
+			mat = leia.nextLine().toUpperCase();
+			
+			for (int i = 0; i < matricula.length; i++) {
+				if (mat.equals(matricula[i])) {
+					numero = i;
+					System.out.printf("%s - %s", matricula[numero], alunos[numero]);
+					System.out.printf("\nDigite a nota do aluno: ");
+					notas[numero] = leia.nextInt();
 
-			System.out.printf("Quer continuar S/N: ");
-			resposta = leia.next().toUpperCase().charAt(0);
-			if (resposta == 'S') {
-				continua = true;
-			} else {
-				continua = false;
+					System.out.printf("Quer continuar S/N: ");
+					resposta = leia.next().toUpperCase().charAt(0);
+					if (resposta == 'S') {
+						continua = true;
+					} else {
+						continua = false;
+					}
+					System.out.printf("==");
+					break;
+				}
 			}
-		} while (continua);
+			
+		}while(continua);
 
 		System.out.printf("\nLISTA DE ALUNOS QUE POSSUEM NOTA:");
 		System.out.printf("\nMAT\tNOME\tNOTA");

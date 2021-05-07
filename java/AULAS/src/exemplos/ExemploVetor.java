@@ -20,5 +20,6 @@ public class ExemploVetor {
 			}
 		}
 		System.out.printf("A maior pontuação de suas atividades é: %d", maiorPontuacao);
+		sc.close();
 	}
 }

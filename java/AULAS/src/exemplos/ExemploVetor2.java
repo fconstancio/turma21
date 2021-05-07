@@ -36,5 +36,6 @@ public class ExemploVetor2 {
 			System.out.printf("%s : %d pontos\n", times[i], pontos[i]);
 			
 		}
+		sc.close();
 	}
 }
