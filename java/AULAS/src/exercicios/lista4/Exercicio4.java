@@ -20,7 +20,7 @@ public class Exercicio4 {
 		boolean opcao4 = true;
 
 		do {
-			System.out.printf("===MENU===\n");
+			System.out.printf("\t===MENU===\n");
 			System.out.printf("(1) somar as  duas matrizes. %s\n", ((opcao1) ? "SIM" : "NÃO"));
 			System.out.printf("(2) subtrair as  duas matrizes. %s\n", ((opcao2) ? "SIM" : "NÃO"));
 			System.out.printf("(3) adcionar uma constante as  duas matrizes. %s\n", ((opcao3) ? "SIM" : "NÃO"));
@@ -31,7 +31,7 @@ public class Exercicio4 {
 			opcao1 = (menu == 1) ? !opcao1 : opcao1;
 			opcao2 = (menu == 2) ? !opcao2 : opcao2;
 			opcao3 = (menu == 3) ? !opcao3 : opcao3;
-			opcao4 = (menu == 4) ? false : opcao4;
+			opcao4 = (menu == 4) ? !opcao4 : opcao4;
 
 		} while (opcao4);
 
@@ -50,53 +50,60 @@ public class Exercicio4 {
 				segundaN[i][j] = segunda[i][j] + numero;
 			}
 		}
-		System.out.printf("\n==PRIMEIRA==\n");
+		
+		System.out.printf("\n\t==PRIMEIRA==\n");
 		for (int i = 0; i < primeira.length; i++) {
+			System.out.print("|");
 			for (int j = 0; j < primeira[i].length; j++) {
-				System.out.printf("%.2f\t|", primeira[i][j]);
+				System.out.printf("\t%.2f\t|", primeira[i][j]);
 			}
 			System.out.println();
 		}
-		System.out.printf("\n==SEGUNDA==\n");
+		System.out.printf("\n\t==SEGUNDA==\n");
 		for (int i = 0; i < segunda.length; i++) {
+			System.out.print("|");
 			for (int j = 0; j < segunda[i].length; j++) {
-				System.out.printf("%.2f\t|", segunda[i][j]);
+				System.out.printf("\t%.2f\t|", segunda[i][j]);
 			}
 			System.out.println();
 		}
 
 		if (opcao1) {
-			System.out.printf("\n==SOMA==\n");
+			System.out.printf("\n\t==SOMA==\n");
 			for (int i = 0; i < soma.length; i++) {
+				System.out.print("|");
 				for (int j = 0; j < soma[i].length; j++) {
-					System.out.printf("%.2f\t|", soma[i][j]);
+					System.out.printf("\t%.2f\t|", soma[i][j]);
 				}
 				System.out.println();
 			}
 		}
 
 		if (opcao2) {
-			System.out.printf("\n==DIFERENCA==\n");
+			System.out.printf("\n\t==DIFERENCA==\n");
 			for (int i = 0; i < diferenca.length; i++) {
+				System.out.print("|");
 				for (int j = 0; j < diferenca[i].length; j++) {
-					System.out.printf("%.2f\t|", diferenca[i][j]);
+					System.out.printf("\t%.2f\t|", diferenca[i][j]);
 				}
 				System.out.println();
 			}
 		}
 
 		if (opcao3) {
-			System.out.printf("\n==PRIMEIRA + CONSTANTE==\n");
+			System.out.printf("\n\t==PRIMEIRA + CONSTANTE==\n");
 			for (int i = 0; i < primeiraN.length; i++) {
+				System.out.print("|");
 				for (int j = 0; j < primeiraN[i].length; j++) {
-					System.out.printf("%.2f\t|", primeiraN[i][j]);
+					System.out.printf("\t%.2f\t|", primeiraN[i][j]);
 				}
 				System.out.println();
 			}
-			System.out.printf("\n==SEGUNDA + CONSTANTE==\n");
+			System.out.printf("\n\t==SEGUNDA + CONSTANTE==\n");
 			for (int i = 0; i < segundaN.length; i++) {
+				System.out.print("|");
 				for (int j = 0; j < segundaN[i].length; j++) {
-					System.out.printf("%.2f\t|", segundaN[i][j]);
+					System.out.printf("\t%.2f\t|", segundaN[i][j]);
 				}
 				System.out.println();
 			}
