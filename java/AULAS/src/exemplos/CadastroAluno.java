@@ -21,7 +21,7 @@ public class CadastroAluno {
 		
 		System.out.printf("\nNome: %s", aluno1.getNome());
 		System.out.printf("\nIdade: %d", aluno1.calculoIdade());
-		System.out.printf("\nGenero: %s", aluno1.getGenero());
+		System.out.printf("\nGenero: %c", aluno1.getGenero());
 		System.out.printf("\nVivo: %s", (aluno1.getVivo())?"SIM":"NÃO");
 		
 		

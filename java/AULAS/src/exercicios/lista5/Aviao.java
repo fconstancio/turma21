@@ -72,7 +72,7 @@ public class Aviao {
 			if (this.velocidade > getVelocidadeMax()) {
 				this.velocidade = getVelocidade();
 			}
-			System.out.printf("Aumentando a velocidade para %.2fKm/h\n", getVelocidade());
+			System.out.printf("Aumentando a velocidade para %.2fKm/h\n", this.velocidade);
 		} else {
 			System.out.printf("Você precisa ligar primeiro.\n");
 		}
