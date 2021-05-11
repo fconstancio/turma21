@@ -8,20 +8,21 @@ public class Exercicio1 {
 
 		System.out.printf("Nome: %s\n", cachorro.getNome());
 		System.out.printf("Idade: %d\n", cachorro.getIdade());
-		cachorro.emitirSom("Au!! Au!!");
+		cachorro.emitirSom();
 		cachorro.correr();
 		System.out.println();
 
 		System.out.printf("Nome: %s\n", cavalo.getNome());
 		System.out.printf("Idade: %d\n", cavalo.getIdade());
-		cavalo.emitirSom("hiin in in hinir!!");
+		cavalo.emitirSom();
 		cavalo.correr();
 		System.out.println();
 
 		System.out.printf("Nome: %s\n", preguica.getNome());
 		System.out.printf("Idade: %d\n", preguica.getIdade());
-		preguica.emitirSom("!!");
+		preguica.emitirSom();
 		preguica.subirArvore();
+		
 	}
 
 }

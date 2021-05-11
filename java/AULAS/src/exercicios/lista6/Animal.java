@@ -26,8 +26,8 @@ public abstract class Animal {
 		this.idade = idade;
 	}
 
-	public void emitirSom(String som) {
-		System.out.printf("%s\n", som);
+	public void emitirSom() {
+
 	}
 
 }
