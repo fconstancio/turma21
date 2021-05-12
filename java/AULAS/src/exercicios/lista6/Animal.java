@@ -26,8 +26,6 @@ public abstract class Animal {
 		this.idade = idade;
 	}
 
-	public void emitirSom() {
-
-	}
+	public abstract void emitirSom();
 
 }
