@@ -10,5 +10,5 @@ public class CadFuncionario {
 
 		func1.mostrarSalario();
 	}
-
+	
 }

@@ -3,8 +3,8 @@ package exemplos.cadfunc;
 public class Funcionario {
 	// atributos
 	private String matricula;
-	private int horasTrabalhadas;
-	private double valorHora;
+	protected int horasTrabalhadas;
+	protected double valorHora;
 	private String nome;
 
 	// construtores
