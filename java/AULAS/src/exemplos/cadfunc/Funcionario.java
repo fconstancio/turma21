@@ -56,8 +56,8 @@ public class Funcionario {
 	}
 
 	// metodo
-	public void mostrarSalario() {
-		System.out.printf("\nO salário deste funcionário é: R$ %.2f", (horasTrabalhadas * valorHora));
+	public double salario() {
+		return (horasTrabalhadas * valorHora);
 	}
 
 }
